@@ -1,10 +1,12 @@
-.mainheading{
-    text-align: center;
-}
 
 .topnav {
                       overflow: hidden;
                       background-color: #333;
+                      width:100%;
+                      position:fixed;
+                      left:0px;
+  
+                      
                     }
 
                      .topnav a {
@@ -25,3 +27,8 @@
                     background-color: #276bd8;
                     color: White;
                     }
+                    
+.jumbotron {
+    height:210px;
+    position:relative;
+           }
