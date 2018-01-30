@@ -1,108 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-}
+    <head>
+        <title>Full Screen Scrolling with Page Piling Effect Demo</title>
 
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css">
+    </head>
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
+    <body>
+        <div id="pagepiling">
+            <div class="section1">Section 1</div>
+            <div class="section2">Section 2</div>
+            <div class="section3">Section 3</div>
+            <div class="section4">Section 4</div>
+        </div>
 
-.dropdown .dropbtn {
-    cursor: pointer;
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
-}
-</style>
-</head>
-<body>
-
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Dropdown
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div> 
-</div>
-
-<h3>Dropdown Menu inside a Navigation Bar</h3>
-<p>Click on the "Dropdown" link to see the dropdown menu.</p>
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
-  }
-}
-</script>
-</body>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#pagepiling').pagepiling();
+            });
+        </script>
+    </body>
 </html>
