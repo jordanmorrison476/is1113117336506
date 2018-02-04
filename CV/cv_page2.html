@@ -5,55 +5,96 @@
         <title>Education</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
         
-          <!-- Adding Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
         
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style type="text/css">
+            
+            .work-experience{
+                position:fixed;
+                width:40%;
+            }
+            
+            .hobbies{
+                position:fixed;
+                width:20%;
+                left:55%;
+            }
+          
+          
+            
+        </style>
     </head>
 
   <body>
       
+      <div class="header">
        <h1 align="center">IS1113 Project - By Jordan Morrison (117336506)</h1>
+      </div>
       
-      <div class="topnav">
-           
-        <a  href="../homepage.html">Home</a>
+      
+     <div class="navbar">
+         
+  <a href="../homepage.html">Home</a>
+  
+  <div class="dropdown">
+      <div class="active">
+    <button class="dropbtn">Curriculum Vitae
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="cv_page1.html">Page 1</a>
+      <a href="#">Page 2</a>
+    </div>
+  </div> 
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Interests
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Interests/sports.html">Sports</a>
+      <a href="Interests/travel.html">Travel</a>
+    </div>
+  </div>
+  
+  <a href="#">Shop</a>
+  
+</div>
+    
+       <div class="content">        
+       
+       <div class="work-experience">
+      
+        <h2>Work Experience</h2>
         
- 
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum Vitae <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-             <li><a href="cv_page1.html"><font color="black">CV Page 1 - Personal  </a></font></li>
-             <li><a class="active" href="#"><font color="black">CV Page 2 - Education </a></font></li>
-             <li><a href="cv_page3.html"><font color="black">CV Page 3 - Work Experience and Hobbies </a></font></li>
-          </ul>
-        
-        <a href="../Interests/sports.html">Sports</a>
-        <a href="../Interests/travel.html">Travel</a>
+        <p><Burritos and Blues Restaurant, Cork City - (June 2017 - October 2017)  </br><br/>
+                      Catering Assistant </br><br/>
+                  Bank of Ireland, Ballincollig - (September 2014 - June 2015) </br><br/>
+                      Branch manager of the 'Bank of Ireland School Bank' in Colaiste Choilm. I had a team of five people. Through my organisation and direction, we opened 135 student accounts throughout the year - making us one of the most successful school branches in Ireland. </br><br/>
+                 Dennehy's Health and Fitness, Ballincollig - (September 2014 - May 2015) </br><br/>
+                      I worked as part of the 'Youth Initiative Program'. I learned valuable skills from a real world working environment and dealt with staff/customers on a regular basis.
+        </p>
         
         </div>
         
-        <h2 class="mainheading">Educational Details</h2>
-        
-        <p>        2017 - Present: University College Cork <br/><br/>
-
-                       1st Year Business Information Systems <br/><br/>
-
-                   2011 - 2016:  Colaiste Choilm, Cork. <br/><br/>
-
-                       Leaving Certificate Results - 520 points (3 H2's and 3 H3's) <br/><br/>
-
-                       Junior Certificate Results - 2 A's and 6 B's 
-                       
-                <a href="cv_page3.html" class="btn-dark">Next Page</a>
-         </p>
+        <div class="hobbies">
+         <h2>Hobbies</h2>             
          
-                       
-       
-       
-       </p>
+         <p>Guitar and Harmonica <br/><br/>
+
+            Computers and programming <br/><br/>
+
+         	Fitness <br/><br/>
+
+            Song-writing <br/><br/>
+
+           Reading <br/><br/>
+        </p>
+    </div>
+    </div>  
  </body>
 </html>

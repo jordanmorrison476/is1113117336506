@@ -2,9 +2,130 @@
 <html>
     
     <head>
+      
         <title>IS1113 Project - 117336506</title>
        
         <link rel="stylesheet" href="mystylesheet.css" type="text/css"/>
+        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style type = "text/css">
+
+        
+        .welcome {
+            z-index:1000;
+            font-family:verdana,arial;
+            font-size:52pt;
+            color:rgba(232, 232, 240, 1);
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            position:absolute;
+            text-align:center;
+            top:35%;
+        }
+        
+        .slideshow {
+  list-style: none;
+  z-index: 1;
+}
+
+.slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 147px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation: imageAnimation 48s linear infinite 0s;
+  -moz-animation: imageAnimation 48s linear infinite 0s;
+  animation: imageAnimation 48s linear infinite 0s;
+}
+
+.slideshow li h3 {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 150px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  font-size: 4.0625em;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-animation: titleAnimation 24s linear 1 0s;
+  -moz-animation: titleAnimation 24s linear 1 0s;
+  animation: titleAnimation 24s linear 1 0s;
+}
+
+
+
+@-webkit-keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  12.5% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+.no-cssanimations .slideshow li span {
+  opacity: 1;
+}
+
+.slideshow {
+  list-style: none;
+  z-index: 1;
+}
+
+.slideshow li:nth-child(1) span {
+  background-image: url(http://vunature.com/wp-content/uploads/2016/10/space-nebula-stars-horsehead-beautiful-nature-wallpaper-for-pc-1920x1080.jpg);
+}
+
+.slideshow li:nth-child(2) span {
+  background-image: url(http://epicwallpaperz.com/wallpaper-hd/trippy-space-wallpaper-phone-On-wallpaper-hd.jpg);
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  animation-delay: 15s;
+}
+
+.slideshow li:nth-child(3) span {
+  background-image: url(https://www.wallpapersbrowse.com/images/km/kmjphdw.jpg);
+  -webkit-animation-delay: 30s;
+  -moz-animation-delay: 30s;
+  animation-delay: 30s;
+}
+
+.slideshow li:nth-child(4) span {
+  background-image: url(https://www.wallpapersbrowse.com/images/2v/2vjt1vl.jpg);
+  -webkit-animation-delay: 45s;
+  -moz-animation-delay: 45s;
+  animation-delay: 45s;
+}
+          
+          
+        </style>
         
        
     </head>
@@ -17,33 +138,58 @@
    </div>  
 
       
-      <div class="topnav">
-         
-        <a class="active" href="#">Home</a>
-        <a href="CV/cv_page1.html">Curriculum Vitae</a>
-        <a href="Interests/sports.html">Sports</a>
-        <a href="Interests/travel.html">Travel</a>
-           
-      </div>
-       
-    <ul class='slideshow'>
-  <li>
-    <span>Space1</span>
-  </li>
-  <li>
-    <span>Space2</span>
-  </li>
-  <li>
-    <span>Space3</span>
-  </li>
-  <li>
-    <span>Space4</span>
-  </li>
-</ul>
-        
+ <div class="navbar">
+   
+  <a class="active" href="#">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Curriculum Vitae
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="CV/cv_page1.html">Page 1</a>
+      <a href="CV/cv_page1.html">Page 2</a>
+    </div>
+  </div> 
+  
+  <div class="dropdown">
+    <button class="dropbtn">Interests
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Interests/sports.html">Sports</a>
+      <a href="Interests/travel.html">Travel</a>
+    </div>
+  </div> 
+  
+  <a href="#">Shop</a>
+  
+</div>
+
+    
+    <div>   
+    <ul class="slideshow">
+      
+      <li>
+        <span>Space1</span>
+      </li>
+      <li>
+        <span>Space2</span>
+      </li>
+      <li>
+        <span>Space3</span>
+      </li>
+      <li>
+       <span>Space4</span>
+      </li>
+    </ul>
+    </div>
+    
+    <div class="welcome">
+      <p>Welcome to my web development, design and deployment project!</p>
+    </div>
         
     </body>
     
     
 </html>
-
