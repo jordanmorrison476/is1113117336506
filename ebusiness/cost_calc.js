@@ -1,6 +1,6 @@
 /* global $ */
 
-function calcsub(){
+function calcSub(){
     
     var argsubtotal;
     
@@ -16,8 +16,8 @@ function calcsub(){
 
 function display(parm1){
     
-    document.getelementid("subtotal").value = parm1;
-    document.getelementid("total").value = parm1;
+    document.getElementId("subtotal").value = parm1;
+    document.getElementId("total").value = parm1;
     
     enablebtnproceed();
 }

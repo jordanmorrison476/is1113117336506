@@ -9,6 +9,7 @@
         <script type="text/javascript" src="cost_calc.js"></script>
         
     </head>
+    
     <body>
         <h4>Select a Product</h4>
         <br/>
