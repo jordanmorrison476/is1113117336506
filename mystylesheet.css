@@ -58,7 +58,7 @@
     position: fixed;
     background-color: rgb(142, 172, 249);
     background-color: rgba(142, 172, 249, 0.3);
-    min-width: 8.6%;
+    min-width: 12%;
 }
 
 .dropdown-content a {
