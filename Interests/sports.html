@@ -2,26 +2,39 @@
 <html>
    <head>
        <title>Interests - Sports</title>
-       <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+       <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+       <link rel="stylesheet" href="../jquery.pagepiling.css" type="text/css"  />
+       
+       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+      <script type="text/javascript" src="../jquery.pagepiling.js"></script>
       
+      <script>$(document).ready(function() {
+	            $('#pagepiling').pagepiling();
+                });
+      </script>
+       
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <link rel="icon" href="favicon.ico" type="image/x-icon">
        
-       <style type="text/css">
+      <style type="text/css">
            
            .sport{
                position:fixed;
                top:25%;
                left:1%;
-               
-               
            }
+           
+           
+               
+               
+           
            
        </style>
     
+     
       
    </head>  
   
@@ -81,14 +94,20 @@
       </div>
         
         
-        <div class="sport">
-           <h2>Sports</h2>
-            
-           <p>Favourite Sport: Soccer </p>
-       </div>
-        
+     
+    </div>
+    
      </div>
      
+     <div id="pagepiling">
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	<div class="section">Some section</div>
+	</div>
+     
+     
+	
    </body>
     
     
