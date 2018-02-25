@@ -8,6 +8,7 @@
         padding:2%;
         font-family:verdana, arial;
         color:white;
+        z-index:100;
         }
 
 .navbar {
@@ -19,7 +20,7 @@
     top:17%;
     width:100.5%;
     left:-.5%;
-    z-index:5;
+    z-index:100;
    
 }
 
@@ -87,9 +88,9 @@
 
 .active{
         background-color: rgb(12, 73, 173);
-        background-color: rgba(12, 73, 173, 0.6);
+        background-color: rgba(12, 73, 173, 1);
         color: white;
-        z-index:100;
+        z-index:1;
   
         }
 
@@ -108,3 +109,4 @@
             z-index:1;
             color:white;
            }
+           
