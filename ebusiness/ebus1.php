@@ -17,8 +17,8 @@
           
           #products{
                     position:fixed;
-                    top:24%;
-                    right:30%;
+                    top:28%;
+                    left:20%;
                     z-index:1;
                     color:white;
                    
@@ -79,8 +79,8 @@
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                      <a class="active" href ="../ebusiness/ebus1.php">Shop</a>
-                      <a href ="ebusiness/ebus2.php">Payment</a>
+                      <a class="active" href = "../ebusiness/ebus1.php">Shop</a>
+                      <a href = "../ebusiness/ebus2.php">Payment</a>
                     </div>
                   </div>
                 </div>

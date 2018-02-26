@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RECEIPT</title>
+        <title>Receipt</title>
         
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
         
