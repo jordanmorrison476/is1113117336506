@@ -71,7 +71,7 @@ session_start();
                     <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="#">Homepage</a>
                       <a href ="#">About</a>
-                      <a href ="#">Products</a>
+                      <a href ="#" style="background-color:rgba(12, 73, 173, 1);">Products</a>
                     </div>
                    </div>
                   </div>

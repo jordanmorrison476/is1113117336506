@@ -97,7 +97,7 @@
 .dropdown-content a:hover {
     background-color: rgb(221, 221, 221);
     background-color: rgba(135,131,131, 0.9);
-    z-index:100;
+    z-index:70;
 }
 
 .dropdown:hover .dropdown-content {
@@ -106,7 +106,6 @@
 
 .active{
         background-color: rgb(12, 73, 173);
-        background-color: rgba(12, 73, 173, 1);
         color: white;
         z-index:100;
   
