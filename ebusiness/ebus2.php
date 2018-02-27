@@ -41,7 +41,7 @@ session_start();
         
         <div class="navbar">
                
-                  <a href="#">Home</a>
+                  <a href="../homepage/homepage.html">Home</a>
                   
                   <div class="dropdown">
                     <button class="dropbtn">Curriculum Vitae
@@ -67,17 +67,20 @@ session_start();
                   
                   
                   <div class="dropdown">
+                    <div class ="active">
                     <button class="dropbtn">Cloud Services
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                       <a href ="#">Homepage</a>
                       <a href ="#">About</a>
+                      <a href ="#">Products</a>
                     </div>
+                   </div>
                   </div>
                   
                   <div class="dropdown">
-                   <div class ="active">
+                   
                     <button class="dropbtn">Ebusiness
                       <i class="fa fa-caret-down"></i>
                     </button>
@@ -85,7 +88,7 @@ session_start();
                       <a href ="../ebusiness/ebus1.php">Shop</a>
                       <a class="active" href ="ebusiness/ebus2.php">Payment</a>
                     </div>
-                  </div>
+                  
                 </div>
                 
               </div>
@@ -95,12 +98,20 @@ session_start();
                 
                 
                     <form action="ebus3.php" method="POST">
+                      
+                      <label for="user_name">Name:</label> <br><br>
+                      
+                      <input type="text" id="user_name" placeholder="Joe Bloggs" maxlength="30"> <br><br><br>
+                      
+                      <label for="user_email">Email:</label> <br><br>
+                      
+                      <input type="text" id="user_email" placeholder="joebloggs@ucc.ie" maxlength="25"> <br><br><br>
         
-                            <label for="user_pin">PIN</label>
-                            
-                            <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
-        
-                        <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+                      <label for="user_pin">PIN:</label> <br><br>
+                      
+                      <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4"> <br><br>
+  
+                     <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
                       
                     </form>
                     
@@ -108,9 +119,11 @@ session_start();
                     <button onClick="validateDetails()">Validate</button>
                     
                 </div>   
-                    
+                
                     <?php
                     // Set session variables
+                    $_SESSION["user_name"] = $_POST["user_name"];
+                    $_SESSION["user_email"] = $_POST["user_email"];
                     $_SESSION["total"] = $_POST["total"];
                     ?>
                 

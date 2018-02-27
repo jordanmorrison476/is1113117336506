@@ -38,7 +38,7 @@
         
         <div class="navbar">
                
-                  <a href="#">Home</a>
+                  <a href="../homepage/homepage.html">Home</a>
                   
                   <div class="dropdown">
                     <button class="dropbtn">Curriculum Vitae
@@ -64,17 +64,20 @@
                   
                   
                   <div class="dropdown">
+                    <div class ="active">
                     <button class="dropbtn">Cloud Services
                       <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                       <a href ="#">Homepage</a>
                       <a href ="#">About</a>
+                      <a href ="#">Products</a>
                     </div>
+                   </div>
                   </div>
                   
                   <div class="dropdown">
-                   <div class ="active">
+                   
                     <button class="dropbtn">Ebusiness
                       <i class="fa fa-caret-down"></i>
                     </button>
@@ -82,7 +85,7 @@
                       <a class="active" href = "../ebusiness/ebus1.php">Shop</a>
                       <a href = "../ebusiness/ebus2.php">Payment</a>
                     </div>
-                  </div>
+                 
                 </div>
                 
               </div>
