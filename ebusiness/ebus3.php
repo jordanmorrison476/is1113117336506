@@ -54,10 +54,8 @@ session_start();
                   </div> 
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Interests
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+                    <button class="dropbtn">Interests</button>
+                    <div class="dropdown-content" style="min-width:12.4%;">
                       <a href ="../interests/sports.html">Sports</a>
                       <a href ="../interests/travel.html">Travel</a>
                       <a href ="../interests/cloud.html">Cloud</a>
@@ -70,7 +68,7 @@ session_start();
                     <button class="dropbtn">Cloud Services
                       <i class="fa fa-caret-down"></i>
                     </button>
-                    <div class="dropdown-content">
+                    <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="#">Homepage</a>
                       <a href ="#">About</a>
                       <a href ="#">Products</a>

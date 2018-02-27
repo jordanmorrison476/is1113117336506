@@ -41,9 +41,7 @@
                   <a href="../homepage/homepage.html">Home</a>
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Curriculum Vitae
-                      <i class="fa fa-caret-down"></i>
-                    </button>
+                    <button class="dropbtn">Curriculum Vitae</button>
                     <div class="dropdown-content">
                       <a href ="../cv/cv_page1.html">Personal Details</a>
                       <a href ="../cv/cv_page2.html">Education</a>
@@ -52,10 +50,8 @@
                   </div> 
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Interests
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+                    <button class="dropbtn">Interests</button>
+                    <div class="dropdown-content" style="min-width:12.4%;">
                       <a href ="../interests/sports.html">Sports</a>
                       <a href ="../interests/travel.html">Travel</a>
                       <a href ="../interests/cloud.html">Cloud</a>
@@ -65,28 +61,14 @@
                   
                   <div class="dropdown">
                     <div class ="active">
-                    <button class="dropbtn">Cloud Services
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+                    <button class="dropbtn">Cloud Services</button>
+                    <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="#">Homepage</a>
                       <a href ="#">About</a>
-                      <a href ="#">Products</a>
+                      <a class="active" href ="#">Products</a>
                     </div>
                    </div>
                   </div>
-                  
-                  <div class="dropdown">
-                   
-                    <button class="dropbtn">Ebusiness
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a class="active" href = "../ebusiness/ebus1.php">Shop</a>
-                      <a href = "../ebusiness/ebus2.php">Payment</a>
-                    </div>
-                 
-                </div>
                 
               </div>
               
