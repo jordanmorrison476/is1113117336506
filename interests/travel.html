@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
       <link rel="icon" href="favicon.ico" type="image/x-icon">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="slideshow.css">
         
        
         
@@ -18,60 +21,98 @@
     
     <body>
       
-      <div class="background-image">
-          <img src="main background.jpg">
+        <div class="background-image">
+            <img src="main background.jpg">
         </div> 
+            
+    <div class="foreground">
           
-         <div class="foreground">
-        
-         <div class="header">
-        <h1 align="center">IS1113 Project - By Jordan Morrison (117336506)</h1>
+          <div class="header">
+              <h1 align="center">IS1113 Project - By Jordan Morrison (117336506)</h1>
+          </div>
+                  
+          <div class="navbar">
+                 
+                <a href="../homepage.html">Home</a>
+                
+                <div class="dropdown">
+                  <button class="dropbtn">Curriculum Vitae</button>
+                  <div class="dropdown-content">
+                    <a href="../CV/cv_page1">Personal Details</a>
+                    <a href="../CV/cv_page2.html">Education</a>
+                  <a href ="../CV/cv_page3.html">Work-Experience</a>
+                      </div>
+                 </div> 
+                                
+                  <div class="dropdown">
+                      <div class ="active">
+                    <button class="dropbtn">Interests</button>
+                    <div class="dropdown-content" style="min-width:12.4%;">
+                      <a href ="sports.html">Sports</a>
+                      <a class="active" href ="#">Travel</a>
+                      <a href ="cloud.html">Cloud</a>
+                    </div>
+                    </div>
+                  </div> 
+                          
+                  
+             </div>
+                
+      <div class="container">   
+       
+        <div class="display-container">
+          
+            <div class="display-container mySlides">
+              <img src="../interests/interests-pictures/img-germany.jpeg" style="width:100%;">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                Trolltunga, Norway
+              </div>
+            </div>
+            
+            <div class="display-container mySlides">
+              <img src="../interests/interests-pictures/img-newyork.jpeg" style="width:100%">
+            </div>
+            
+            <div class="display-container mySlides">
+              <img src="../interests/interests-pictures/img-rome.jpeg" style="width:100%">
+            </div>
+            
+            <div class="display-container mySlides">
+              <img src="../interests/interests-pictures/img-northernlights.jpeg" style="width:100%">
+            </div>
+            
+            
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+          
+        </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+                
+              
       </div>
-      
-      <div class="navbar">
-     
-  <a href="../homepage.html">Home</a>
-  
-  <div class="dropdown">
-      
-    <button class="dropbtn">Curriculum Vitae
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../CV/cv_page1">Personal Details</a>
-      <a href="../CV/cv_page2.html">Education</a>
-    <a href ="../CV/cv_page3.html">Work-Experience</a>
-        </div>
-      </div> 
-                  
-      <div class="dropdown">
-          <div class ="active">
-        <button class="dropbtn">Interests
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" style="min-width:12.4%;">
-          <a href ="sports.html">Sports</a>
-          <a class="active" href ="#">Travel</a>
-          <a href ="cloud.html">Cloud</a>
-        </div>
-        </div>
-      </div> 
-                  
-                  
-      <div class="dropdown">
-        <button class="dropbtn">Cloud Services
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content" style="min-width:16.25%;"
-          <a href ="#">Homepage</a>
-          <a href ="#">About</a>
-          <a href ="../ebusiness/ebus1.php">Products</a>
-        </div>
-      </div>
-      
     
-    </div>
-    </body>
-   
+  </div>
+     
+</body>
+    
     
 </html>
