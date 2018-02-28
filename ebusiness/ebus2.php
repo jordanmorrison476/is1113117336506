@@ -36,8 +36,12 @@ session_start();
     <body>
         
         <div class="background-image">
-               <img src="main background.jpg">
+                 <img src="img-apeiron-background.jpeg" height=1000 width=2000>
         </div> 
+        
+        <div class="apeiron-logo">
+        <img src="apeiron-logo-invert.png">
+      </div>
         
         <div class="navbar">
                
@@ -66,24 +70,12 @@ session_start();
                     <div class ="active">
                     <button class="dropbtn">Cloud Services</button>
                     <div class="dropdown-content" style="min-width:16.25%;">
-                      <a href ="#">Homepage</a>
-                      <a href ="#">About</a>
+                      <a href ="../cloud_services/homepage_2.html">Homepage</a>
+                      <a href ="../cloud_services/about.html">About</a>
                       <a href ="#" style="background-color:rgba(12, 73, 173, 1);">Products</a>
                     </div>
                    </div>
                   </div>
-                  
-                  <div class="dropdown">
-                   
-                    <button class="dropbtn">Ebusiness
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                      <a href ="../ebusiness/ebus1.php">Shop</a>
-                      <a class="active" href ="ebusiness/ebus2.php">Payment</a>
-                    </div>
-                  
-                </div>
                 
               </div>
               
