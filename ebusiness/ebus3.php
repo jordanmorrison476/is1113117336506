@@ -47,7 +47,7 @@ session_start();
                   <a href="../homepage/homepage.html">Home</a>
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Curriculum Vitae</button>
+                    <button class="dropbtn onclick="location.href='../cv/cv_page1.html'"">Curriculum Vitae</button>
                     <div class="dropdown-content">
                       <a href ="../cv/cv_page1.html">Personal Details</a>
                       <a href ="../cv/cv_page2.html">Education</a>
@@ -56,7 +56,7 @@ session_start();
                   </div> 
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Interests</button>
+                    <button class="dropbtn" onclick="location.href='../interests/sports.html'">Interests</button>
                     <div class="dropdown-content" style="min-width:12.4%;">
                       <a href ="../interests/sports.html">Sports</a>
                       <a href ="../interests/travel.html">Travel</a>
@@ -67,7 +67,7 @@ session_start();
                   
                   <div class="dropdown">
                       <div class ="active">
-                    <button class="dropbtn">Cloud Services</button>
+                    <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'">Cloud Services</button>
                     <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="../cloud_services/homepage_2.html">Homepage</a>
                       <a href ="../cloud_services/about.html">About</a>

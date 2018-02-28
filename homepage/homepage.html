@@ -15,34 +15,56 @@
          
          #github{
                  position:fixed;
-                 top:47%;
-                 left:7%;
+                 top:77%;
+                 left:38%;
+                 height:26%;
+                 width:26%;
          }
     
          #github:hover{
                  position:fixed;
-                 top:47%;
-                 left:7%;
+                 top:77%;
+                 left:38%;
                  height:28%;
                  width:28%;
          }
          
          #cloud9{
                  position:fixed;
-                top:43%;
-                 left:75%;
+                 top:47%;
+                 left:76%;
+                 height:26%;
+                 width:28%;
              
          }
          
          #cloud9:hover{
                      position:fixed;
-                     top:43%;
-                     left:75%;
-                     height:27%;
-                     width:27%;
+                     top:47%;
+                     left:76%;
+                     height:26%;
+                     width:30%;
          
              
              
+         }
+         
+         #heroku{
+                 position:fixed;
+                 top:50%;
+                 left:3%;
+                 height:45%;
+                 width:45%;
+             
+             
+         }
+         
+         #heroku:hover{
+                 position:fixed;
+                 top:50%;
+                 left:3%;
+                 height:47%;
+                 width:47%;
          }
          
         
@@ -66,10 +88,10 @@
                   
              <div class="navbar">
                
-                  <a class="active" href="#">Home</a>
+                  <a class="active" href="#" style="border-radius:4px;">Home</a>
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Curriculum Vitae
+                    <button onclick="location.href='../cv/cv_page1.html'" class="dropbtn"  style="border-radius:4px;">Curriculum Vitae
                     </button>
                     <div class="dropdown-content">
                       <a href ="../cv/cv_page1.html">Personal Details</a>
@@ -79,7 +101,7 @@
                   </div> 
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Interests
+                    <button class="dropbtn" onclick="location.href='../interests/sports.html'"  style="border-radius:4px;">Interests
                     </button>
                     <div class="dropdown-content" style="min-width:12.4%;">
                       <a href ="../interests/sports.html">Sports</a>
@@ -90,7 +112,7 @@
                   
                   
                   <div class="dropdown">
-                    <button class="dropbtn">Cloud Services
+                    <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services
                     </button>
                     <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="../cloud_services/homepage_2.html">Homepage</a>
@@ -114,9 +136,17 @@
               </div>  
               
               <div id="cloud9">
-                  <a href="https://c9.io/jordanmorrison" target="_blank">
+                  <a href="https://c9.io/" target="_blank">
                  <div class="cloud9-logo">
                   <img src="cloud9-logo.png" alt="cloud9 logo" style="height:50%; width:50%">
+                  </div>
+                  </a>
+              </div>
+              
+              <div id="heroku">
+                  <a href="https://is1113-project.herokuapp.com/" target="_blank">
+                 <div class="heroku-logo">
+                  <img src="img-heroku-logo.png" alt="cloud9 logo" style="height:50%; width:50%">
                   </div>
                   </a>
               </div>
