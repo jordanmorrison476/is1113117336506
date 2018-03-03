@@ -30,7 +30,21 @@
                 left:29%;
                 color:white;
                 font-family:helvetica, arial;
+                z-index:3;
             }
+            
+            #panel{
+               position:fixed;
+               width:50%;
+               height:53%;
+               top:33%;
+               left:24%;
+               background-color:rgb(0,0,0);
+               background-color:rgba(0,0,0,0.7);
+               z-index:2;
+               border-radius:50px;
+            
+        }
             
            
         </style>
@@ -39,8 +53,8 @@
   <body>
     
         <div class="background-image">
-          <img src="main background.jpg">
-        </div> 
+           <img src="homepage background.jpg" alt="space image">
+         </div>
           
          <div class="foreground">
               <div class="header">
@@ -50,11 +64,11 @@
                   
         <div class="navbar">
                            
-            <a href ="../homepage/homepage.html">Home</a>
+            <a href ="../homepage/homepage.html" style="border-radius:4px;">Home</a>
             
             <div class="dropdown">
               <div class="active">
-              <button class="dropbtn" onclick="location.href='../cv/cv_page1.html'">Curriculum Vitae
+              <button class="dropbtn" onclick="location.href='../cv/cv_page1.html'" style="border-radius:4px;">Curriculum Vitae
               <i class="fa fa-caret-down"></i></button>
               <div class="dropdown-content" style="min-width:18.25%;">
                 <a href ="../cv/cv_page1.html">Personal Details</a>
@@ -65,7 +79,7 @@
            </div>
                       
             <div class="dropdown">
-              <button class="dropbtn" onclick="location.href='../interests/sports.html'">Interests
+              <button class="dropbtn" onclick="location.href='../interests/sports.html'" style="border-radius:4px;">Interests
               <i class="fa fa-caret-down"></i></button>
               <div class="dropdown-content" style="min-width:13.6%;">
                 <a href ="../interests/sports.html">Sports</a>
@@ -76,7 +90,7 @@
             
             
             <div class="dropdown">
-                <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'">Cloud Services
+                <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services
                 <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-content" style="min-width:17.4%;">
                   <a href ="#">Homepage</a>
@@ -106,6 +120,8 @@
                        </p>
                
                 </div>
+                
+            <div id="panel">.</div>
           
         </div>
       

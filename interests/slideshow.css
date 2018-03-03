@@ -1,34 +1,40 @@
-.w3-btn,.w3-button{
-                  border:none;
-                  display:inline-block;
-                  padding:8px 16px;
-                  vertical-align:middle;
-                  overflow:hidden;
-                  text-decoration:none;
-                  color:inherit;
-                  background-color:inherit;
-                  text-align:center;
-                  cursor:pointer;
-                  white-space:nowrap}
+.btn,.button{
+              border:none;
+              display:inline-block;
+              padding:30px 16px;
+              vertical-align:middle;
+              overflow:hidden;
+              text-decoration:none;
+              color:inherit;
+              background-color:inherit;
+              text-align:center;
+              cursor:pointer;
+              white-space:nowrap;
+            }
                   
-.w3-btn:hover{
-              box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+                  
+.btn:hover{
+             box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    
+          }
 
 
 
-.w3-display-left{
+.display-left{
                  position:absolute;
                  top:50%;
                  left:0%;
                  transform:translate(0%,-50%);
-                 -ms-transform:translate(-0%,-50%)}
+                 -ms-transform:translate(-0%,-50%);
+}
                  
-.w3-display-right{
+.display-right{
                   position:absolute;
                   top:50%;
                   right:0%;
                   transform:translate(0%,-50%);
-                  -ms-transform:translate(0%,-50%)}
+                  -ms-transform:translate(0%,-50%);
+}
                   
 .display-container{
                    position:fixed;
@@ -40,12 +46,12 @@
 }
 
 
-.w3-button:hover{color:#000!important;
+.button:hover{color:#000!important;
                 background-color:#ccc!important}
 
 
 
-.w3-black,.w3-hover-black:hover{
+.black, .hover-black:hover{
                                 color:#fff!important;
                                 background-color:#000!important}
                                 

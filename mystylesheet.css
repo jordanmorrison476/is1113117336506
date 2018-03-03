@@ -9,6 +9,7 @@
         font-family:helvetica,verdana, arial;
         color:white;
         z-index:100;
+        text-shadow: 2px 2px black;
         }
 
 .navbar {
@@ -122,6 +123,8 @@
                   left:-2%;
                   z-index:0;
                   }
+        
+                  
            
 .foreground{
             position:fixed;
@@ -134,5 +137,6 @@
               left:80%;
               top:-14%;
               height:29%;
-              z-index:5;
+              z-index:2;
 }
+
