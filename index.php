@@ -1,12 +1,1 @@
-<?php include_once("homepage.html") ?>
-<?php include_once("cv_page1.html") ?>
-<?php include_once("cv_page2.html") ?>
-<?php include_once("cv_page3.html") ?>
-<?php include_once("sports.html") ?>
-<?php include_once("travel.html") ?>   
-<?php include_once("cloud.html") ?> 
-<?php include_once("homepage_2.html") ?> 
-<?php include_once("about.html") ?> 
-<?php include_once("ebus1.php") ?>   
-<?php include_once("ebus2.php") ?>   
-<?php include_once("ebus3.php") ?> 
+<?php include_once("homepage/homepage.html") ?>
