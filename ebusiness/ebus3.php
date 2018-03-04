@@ -19,10 +19,17 @@ session_start();
             
             #receipt{
                       position:fixed;
-                      top:24%;
-                      left:2%;
+                      top:35%;
+                      left:33%;
                       z-index:1;
                       color:white;
+                      background-color:rgb(0,0,0);
+                      background-color:rgba(0,0,0,0.7);
+                      padding:1%;
+                      padding-left:3%;
+                      padding-right:3%;
+                      font-size:16pt;
+                      
                      
                 
             }
@@ -46,10 +53,10 @@ session_start();
         
         <div class="navbar">
                
-                  <a href="../homepage/homepage.html">Home</a>
+                  <a href="../homepage/homepage.html" style="border-radius:4px;">Home</a>
                   
                   <div class="dropdown">
-                    <button class="dropbtn onclick="location.href='../cv/cv_page1.html'"">Curriculum Vitae</button>
+                    <button class="dropbtn" onclick="location.href='../cv/cv_page1.html'" style="border-radius:4px;">Curriculum Vitae</button>
                     <div class="dropdown-content">
                       <a href ="../cv/cv_page1.html">Personal Details</a>
                       <a href ="../cv/cv_page2.html">Education</a>
@@ -58,7 +65,7 @@ session_start();
                   </div> 
                   
                   <div class="dropdown">
-                    <button class="dropbtn" onclick="location.href='../interests/sports.html'">Interests</button>
+                    <button class="dropbtn" onclick="location.href='../interests/sports.html'" style="border-radius:4px;">Interests</button>
                     <div class="dropdown-content" style="min-width:12.4%;">
                       <a href ="../interests/sports.html">Sports</a>
                       <a href ="../interests/travel.html">Travel</a>
@@ -69,7 +76,7 @@ session_start();
                   
                   <div class="dropdown">
                       <div class ="active">
-                    <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'">Cloud Services</button>
+                    <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services</button>
                     <div class="dropdown-content" style="min-width:16.25%;">
                       <a href ="../cloud_services/homepage_2.html">Homepage</a>
                       <a href ="../cloud_services/about.html">About</a>
@@ -79,24 +86,38 @@ session_start();
                   </div>
                 
               </div>
-        
+
         <div id="receipt">
+          
+          <h4 style="text-align:center;font-size:20pt;border-bottom:1px white solid;padding-bottom:1%">Purchase Receipt:</h4>
+          
+          <!-- Set session variables -->
+          
+          <?php
+          $_SESSION["user_name"] = $_POST["user_name"];
+          $_SESSION["user_email"] = $_POST["user_email"];
+          ?>
+          
+          
+          <?php
+          echo "Name: " . $_SESSION["user_name"];
+          ?>
+          
+          <br/><br/>
+          
+          <?php
+          echo "Email: " . $_SESSION["user_email"];
+          ?>
+          
+          <br/><br/>
+          
+          <?php
+          echo "Total Price: " . "$" . $_SESSION["total"];
+          ?>
+          
+          <br/><br/>
         
-        <h4>Purchase Receipt</h4>
-        
-        <?php
-        // Set session variables
-        $_SESSION["user_name"] = $_POST["user_name"];
-        $_SESSION["user_email"] = $_POST["user_email"];
-        ?>
-        
-        
-        <?php
-        // Echo session variables that were set on previous page
-        echo "Name: " . $_SESSION["user_name"] . ".";
-        echo "Email: " . $_SESSION["user_email"] . ".";
-        echo "Total Price: " . $_SESSION["total"] . ".";
-        ?>
+        </div>
         
         </div>
     </body>
