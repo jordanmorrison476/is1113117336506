@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <title>Select Product</title>
+        <title>Cloud Services | Products</title>
+        
+        <meta charset="UTF-8">
         
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
         
@@ -44,11 +46,11 @@
     <body>
         
       <div class="background-image">
-          <img src="img-apeiron-background.jpeg" height=1000 width=2000>
+          <img src="img-apeiron-background.jpeg" alt="aperion background" height=1000 width=2000>
       </div> 
       
       <div class="apeiron-logo">
-        <img src="apeiron-logo-invert.png">
+        <img src="apeiron-logo-invert.png" alt="apeiron logo">
       </div>
         
         <div class="navbar">
@@ -143,7 +145,7 @@
               
                <label for="vat">
                 VAT @ 10%: 
-                <input type="text" id="vat" currency="euro" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
+                <input type="text" id="vat" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
               </label>
               
               <br>
@@ -160,17 +162,20 @@
               <br>
               <br>
               
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <button type="submit" id="btnProceed" disabled style="background-color:#4fbc58;border-size:1px;border-radius:12px;border-color:#4fbc58;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Add to Shopping Cart</font></button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" id="btnProceed" disabled style="background-color:#6a6c70;border-size:1px;border-radius:12px;border-color:#6a6c70;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Add to Shopping Cart</font></button>
             
             </form>
             
             <br/>
             
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onClick="calcSub()" style="background-color:#1924ef;border-size:1px;border-radius:12px;border-color:#1924ef;width:225px;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Calculate Cost</font></button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onClick="calcSub()" style="background-color:#1924ef;border-size:1px;border-radius:12px;border-color:#1924ef;width:225px;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Calculate Cost</font></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
-            <a role="button" href="ebus1.php" style="color:white;background-color:white;border:0.7px solid #ef1a4f;border-radius:8px;border-color:#ef1a4f;font-size:13pt;color:red;padding:1%;text-decoration:none;"><font style="font-family:verdana, helvetica;font-weight:bold;">Clear Choice</font></a>
+            <a role="button" href="ebus1.php" style="background-color:#ef1a4f;border:0.7px solid #ef1a4f;border-radius:12px;border-color:#ef1a4f;font-size:13pt;color:white;padding:1%;text-decoration:none;"><font style="font-family:verdana, helvetica;font-weight:bold;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;">Clear Choice</font></a>
             
+           
         </div>
+        
+        
     
     </body>
 </html>

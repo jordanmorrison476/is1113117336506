@@ -3,31 +3,33 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
-        <title>Receipt</title>
+        <title>Cloud Services | Products</title>
+        
+        <meta charset="UTF-8">
         
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
         
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+       <link rel="icon" href="favicon.ico" type="image/x-icon">
       
-      <style type="text/css">
+        <style type="text/css">
+            
+            #receipt{
+                      position:fixed;
+                      top:24%;
+                      left:2%;
+                      z-index:1;
+                      color:white;
+                     
+                
+            }
+            
+            
+        </style>
           
-          #receipt{
-                    position:fixed;
-                    top:24%;
-                    left:2%;
-                    z-index:1;
-                    color:white;
-                   
-              
-          }
-          
-          
-      </style>
-        
         
         
         
@@ -80,13 +82,20 @@ session_start();
         
         <div id="receipt">
         
-        <h4>RECEIPT</h4>
-                
+        <h4>Purchase Receipt</h4>
+        
+        <?php
+        // Set session variables
+        $_SESSION["user_name"] = $_POST["user_name"];
+        $_SESSION["user_email"] = $_POST["user_email"];
+        ?>
         
         
         <?php
         // Echo session variables that were set on previous page
-        echo "Total is " . $_SESSION["total"] . ".";
+        echo "Name: " . $_SESSION["user_name"] . ".";
+        echo "Email: " . $_SESSION["user_email"] . ".";
+        echo "Total Price: " . $_SESSION["total"] . ".";
         ?>
         
         </div>

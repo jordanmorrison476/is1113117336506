@@ -58,6 +58,8 @@ function display(parm1, parm2, parm3, parm4){
 
 function enablebtnProceed(){
     $('#btnProceed').prop('disabled', false);
+    document.getElementById("btnProceed").style.backgroundColor = "#1faf07";
+    document.getElementById("btnProceed").style.borderColor = "#1faf07";
 }
 
 function disablebtnProceed() {

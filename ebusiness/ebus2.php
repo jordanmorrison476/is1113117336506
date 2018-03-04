@@ -87,11 +87,11 @@ session_start();
                       
                       <label for="user_name">Name:</label> <br><br>
                       
-                      <input type="text" id="user_name" placeholder="Joe Bloggs" maxlength="30"> <br><br><br>
+                      <input type="text" id="user_name" name="user_name" placeholder="Joe Bloggs" maxlength="30"> <br><br><br>
                       
                       <label for="user_email">Email:</label> <br><br>
                       
-                      <input type="text" id="user_email" placeholder="joebloggs@ucc.ie" maxlength="25"> <br><br><br>
+                      <input type="text" id="user_email" name="user_email" placeholder="joebloggs@ucc.ie" maxlength="25"> <br><br><br>
         
                       <label for="user_pin">PIN:</label> <br><br>
                       
@@ -106,12 +106,10 @@ session_start();
                     
                 </div>   
                 
-                    <?php
-                    // Set session variables
-                    $_SESSION["user_name"] = $_POST["user_name"];
-                    $_SESSION["user_email"] = $_POST["user_email"];
-                    $_SESSION["total"] = $_POST["total"];
-                    ?>
+                <?php
+                // Set session variables
+                $_SESSION["total"] = $_POST["total"];
+                ?>
                 
     </body>
 </html>
