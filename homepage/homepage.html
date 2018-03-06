@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US"> <!-- Specifying the default language of the webpage -->
     
     <head>
       
-        <title>Home | IS1113 Project</title>
+      <!-- Defining the title for the webpage -->
+      <title>Home | IS1113 Project</title>
         
-        <meta charset="UTF-8">
-       
-        <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+      <!-- Specifying the character set -->
+      <meta charset="UTF-8">
+        
+      <!-- Linking an external mystylesheet.css to the html page -->
+      <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
       
+      <!-- Linking project favicon to the html page. *Please direct your attention to the the image located on the left side of your current tab in the browser*-->
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-      
       <link rel="icon" href="favicon.ico" type="image/x-icon">
+      
+      <!-- Using embedded CSS to style the html page -->
        
        <style type="text/css">
+       
+      /* The following CSS code is relating to divs that have unique id's. E.g The github logo is unique to this webpage and not ubiquitous throughout the entire project. It is notated with the symbol "#" */ 
          
          #github{
                  position:fixed;
@@ -23,12 +30,12 @@
                  width:35%;
          }
     
-         #github:hover{
-                 position:fixed;
-                 top:50%;
-                 left:7%;
-                 height:30%;
-                 width:37%;
+         #github:hover{  /* Using a hover event to change the size of the github logo */
+                       position:fixed;
+                       top:50%;
+                       left:7%;
+                       height:30%;
+                       width:37%;
          }
          
          
@@ -43,11 +50,11 @@
          }
          
          #heroku:hover{
-                 position:fixed;
-                     top:48%;
-                     left:65%;
-                     height:33%;
-                     width:37%;
+                       position:fixed;
+                       top:48%;
+                       left:65%;
+                       height:33%;
+                       width:37%;
          }
          
         
@@ -58,26 +65,37 @@
     
     <body>
       
+      <!-- Using a div class to set the background image of the webpage -->
       <div class="background-image">
+      <!-- Using an image tag to insert an image. Using the alt attribute to specify what the image is in plain text in the event that the browser cannot load it -->      
       <img src="homepage-background.jpg" alt="space image">
        </div>
-          
+       
+      <!-- Using a div class to specify the foreground of the webpage -->
           <div class="foreground">
           
+      <!-- Using a div class to specify the foreground of the webpage -->
                <div class="header">
+      <!-- Using a <h1> tag (highest heading value) to insert the heading text -->           
               <h1>IS1113 Project - Jordan Morrison (117336506)</h1>      
                </div>  
             
+      <!-- Using a div class to specify the website navbar. I chose a horizontal navbar at the top of the webpage -->         
+            <div class="navbar">
+                 
+      <!-- Using an anchor tag to insert a link to the homepage. The class "active" results in the homepage link to be blue indicating to the user that the 
+           homepage is the page that they are currently on. The "#" symbol is used so the user doesn't redirect to the page that they are currently on. -->  
+                  <a class="active" href="#" style="border-radius:4px;">Home</a>  <!-- Using inline CSS to create a subtle bevelled styling -->
                   
-             <div class="navbar">
-               
-                  <a class="active" href="#" style="border-radius:4px;">Home</a>
+      <!-- Using buttons as the parent object (indicated by the "dropdown" div) and the anchor tags as its children (indicated by the "dropdown-content" div) to create
+           a simple and responsive horizontal navbar -->          
                   
+      <!-- Using an onclick event to mimick an anchor's functionality. -->              
                   <div class="dropdown">
-                    <button onclick="location.href='../cv/cv_page1.html'" class="dropbtn"  style="border-radius:4px;">Curriculum Vitae
+                    <button onclick="location.href='../cv/cv_page1.html'" class="dropbtn"  style="border-radius:4px;">Curriculum Vitae 
                     </button>
                     <div class="dropdown-content">
-                      <a href ="../cv/cv_page1.html">Personal Details</a>
+                      <a href ="../cv/cv_page1.html">Personal Details</a> <!-- The href link must be preceded by "../" as the link lies outside the homepage folder. It must then contain the full file path. -->
                       <a href ="../cv/cv_page2.html">Education</a>
                       <a href ="../cv/cv_page3.html">Work-Experience</a>
                     </div>
@@ -86,7 +104,7 @@
                   <div class="dropdown">
                     <button class="dropbtn" onclick="location.href='../interests/sports.html'"  style="border-radius:4px;">Interests
                     </button>
-                    <div class="dropdown-content" style="min-width:12.4%;">
+                    <div class="dropdown-content" style="min-width:12.4%;"> <!-- Using inline CSS and changing the min-width attribute to override the mystylesheet.css styling -->
                       <a href ="../interests/sports.html">Sports</a>
                       <a href ="../interests/travel.html">Travel</a>
                       <a href ="../interests/cloud.html">Cloud</a>
@@ -103,35 +121,31 @@
                       <a href ="https://is1113-project-jordanmorrison.c9users.io/ebusiness/ebus1.php">Products</a>
                     </div>
                   </div>
-                  
-                </div>
+              
+      <!-- This div indicates the end of the navbar -->            
+            </div>
                 
-                
-                    <div id="github">
-                  <a href="https://github.com/jordanmorrison476/is1113_project/commits/master" target="_blank">
-                 <div class="github-logo">
-                  <img src="github-logo.png" alt="github logo" style="height:65%; width:65%">
-                  </div>
+      <!-- The two following blocks of divs are images that have anchor tags embedded in them. This means that when the user clicks the image, they are sent to the assigned link -->         
+                <div id="github">
+                  <a href="https://github.com/jordanmorrison476/is1113_project/graphs/commit-activity" target="_blank"> <!-- Using target="_blank" opens the link in a new tab -->
+                   <div class="github-logo">
+                    <img src="github-logo.png" alt="github logo" style="height:65%; width:65%"> <!-- Using inline CSS to override the height and width of the image -->
+                   </div>
                   </a>
-                  </div>  
+                </div>  
                   
                   
-                  <div id="heroku">
-                      <a href="https://is1113-project.herokuapp.com/" target="_blank">
-                     <div class="heroku-logo">
-                      <img src="img-heroku-logo.png" alt="cloud9 logo" style="height:75%; width:75%">
-                      </div>
-                      </a>
-                  </div>
+                <div id="heroku">
+                  <a href="https://is1113-project.herokuapp.com/" target="_blank">
+                   <div class="heroku-logo">
+                    <img src="img-heroku-logo.png" alt="cloud9 logo" style="height:75%; width:75%">
+                   </div>
+                  </a>
+                </div>
             
-            
+      <!-- This div indicates the end of the foreground -->      
         </div>
               
-              
-              
-        
-         
-         
         
     </body>
     

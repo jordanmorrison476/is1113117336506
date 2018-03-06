@@ -2,6 +2,10 @@
 <html lang="en-US">
     <head>
         
+        <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
+             throughout. This is to minimise repetition. -->
+        
+        
         <title>CV | Personal Details</title>
         
         <meta charset="UTF-8">
@@ -13,54 +17,53 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         
         <!-- Adding Bootstrap --> 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfs" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW5Vc51MKb0q5P2rRUgPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         
-        
+        <!-- Using embedded CSS to style html page -->
         
         <style type="text/css">
         
-        .personal-details{
-            position:fixed;
-            font-size:16pt;
-            text-align:left;
-            top:40%;
-            left:21%;
-            color:white;
-            width:26%;
-            border-right: solid 1px white ;
-            font-family:helvetica, arial;
-            z-index:100;
-            text-shadow: 2px 2px black;
-        }
-        
-        .personal-profile{
-             position:fixed;
-             font-size:16pt;
-            text-align:left;
-            top:47%;
-            left:53%;
-            color:white;
-            width:30%;
-            font-family:helvetica, arial;
-            z-index:100;
-            text-shadow: 2px 2px black;
-        }
-        
-        #panel{
-               position:fixed;
-               width:75%;
-               height:60%;
-               top:36%;
-               left:14%;
-               background-color:rgb(0,0,0);
-               background-color:rgba(0,0,0,0.7);
-               z-index:2;
-               border-radius:50px;
+            #personal-details{
+                            position:fixed;
+                            font-size:16pt;
+                            text-align:left;
+                            top:40%;
+                            left:21%;
+                            color:white;
+                            width:26%;
+                            border-right: solid 1px white ;
+                            font-family:helvetica, arial;
+                            z-index:100;
+                            text-shadow: 2px 2px black;
+            }
             
-        }
+            #personal-profile{
+                            position:fixed;
+                            font-size:16pt;
+                            text-align:left;
+                            top:47%;
+                            left:53%;
+                            color:white;
+                            width:30%;
+                            font-family:helvetica, arial;
+                            z-index:100;
+                            text-shadow: 2px 2px black;
+            }
+            
+            #panel{
+                   position:fixed;
+                   width:75%;
+                   height:60%;
+                   top:36%;
+                   left:14%;
+                   background-color:rgb(0,0,0);
+                   background-color:rgba(0,0,0,0.7);
+                   z-index:2;
+                   border-radius:50px;
+                
+            }
 
         </style>
         
@@ -83,74 +86,72 @@
             
              <div class="navbar">
                            
-                              <a href="../homepage/homepage.html" style="border-radius:4px;">Home</a>
-                              
-                                  
-                                      <div class="dropdown">
-                                         <div class="active">
-                                        <button class="dropbtn" style="border-radius:4px;">Curriculum Vitae
-                                          <i class="fa fa-caret-down"></i>
-                                        </button>
-                                        <div class="dropdown-content" style="min-width:18.25%;">
-                                          <a href ="#" style="background-color:rgba(12, 73, 173, 1);">Personal Details</a>
-                                          <a href ="../cv/cv_page2.html">Education</a>
-                                          <a href ="../cv/cv_page3.html">Work-Experience</a>
-                                        </div>
-                                      </div> 
-                                   </div>
-                              
+                      <a href="../homepage/homepage.html" style="border-radius:4px;">Home</a>
+                      
+                          
                               <div class="dropdown">
-                                <button class="dropbtn" onclick="location.href='../interests/sports.html'" style="border-radius:4px;">Interests
-                                <i class="fa fa-caret-down"></i></button>
-                                <div class="dropdown-content" style="min-width:13.6%;">
-                                  <a href ="../interests/sports.html">Sports</a>
-                                  <a href ="../interests/travel.html">Travel</a>
-                                  <a href ="../interests/cloud.html">Cloud</a>
+                                 <div class="active">
+                                <button class="dropbtn" style="border-radius:4px;">Curriculum Vitae
+                                  <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content" style="min-width:18.25%;">
+                                  <a href ="#" style="background-color:rgba(12, 73, 173, 1);">Personal Details</a>
+                                  <a href ="../cv/cv_page2.html">Education</a>
+                                  <a href ="../cv/cv_page3.html">Work-Experience</a>
                                 </div>
                               </div> 
-                              
-                              
-                             <div class="dropdown">
-                                <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services
-                                <i class="fa fa-caret-down"></i></button>
-                                <div class="dropdown-content" style="min-width:17.4%;">
-                                  <a href ="#">Homepage</a>
-                                  <a href ="#">About</a>
-                                  <a href ="#">Products</a>
-                                </div>
-                              </div>
+                           </div>
+                      
+                      <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='../interests/sports.html'" style="border-radius:4px;">Interests
+                        <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content" style="min-width:13.6%;">
+                          <a href ="../interests/sports.html">Sports</a>
+                          <a href ="../interests/travel.html">Travel</a>
+                          <a href ="../interests/cloud.html">Cloud</a>
+                        </div>
+                      </div> 
+                      
+                      
+                     <div class="dropdown">
+                        <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services
+                        <i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content" style="min-width:17.4%;">
+                          <a href ="#">Homepage</a>
+                          <a href ="#">About</a>
+                          <a href ="#">Products</a>
+                        </div>
+                      </div>
                         
                </div>
                
                 
-                <div class="personal-details">
+                <div id="personal-details">
                 
-                        <p> Name: Jordan Morrison <br><br>
+                        <p> Name: Jordan Morrison <br/><br/> <!-- Using the <br/> tag to add a line break -->
                  
-                            Address: *****, Cork, Ireland. <br><br>
+                            Address: *****, Cork, Ireland. <br/><br/>
           
-                            Mobile Number: ********** <br><br>                 
+                            Mobile Number: ********** <br/><br/>                 
                             
-                            Email: ******** <br><br>                   
+                            Email: ******** <br/><br/>                   
                             
-                            Date Of Birth: 21/04/1998 <br><br>
+                            Date Of Birth: 21/04/1998 <br/><br/>
                             
-                            Age: 19 <br><br>
+                            Age: 19 <br/><br/>
                         </p>    
                 </div>
                     
-              <div class="personal-profile">
-              
-    
-                <p>I am a conscientious, driven and focused worker. I currently study first year 'Business Information Systems' in University College Cork.
-                   I have also garnered a large amount of organisational and communication skills through self-motivated enterprise over the past few years. 
-                 <br>
-                 <br>
-                </p>     
-    
-              </div>
-              
-              <div id="panel">.</div>
+                <div id="personal-profile">
+                    <p>I am a conscientious, driven and focused worker. I currently study first year 'Business Information Systems' in University College Cork.
+                       I have also garnered a large amount of organisational and communication skills through self-motivated enterprise over the past few years. 
+                       <br/>
+                       <br/>
+                    </p>     
+                </div>
+        
+        <!-- Using a div with no content to create a panel -->      
+                <div id="panel"> </div>
               
          </div>    
           

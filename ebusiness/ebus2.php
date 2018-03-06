@@ -5,6 +5,10 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
+        
+        <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
+             throughout. This is to minimise repetition. -->
+             
         <title>Enter Details</title>
         
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
@@ -16,6 +20,8 @@ session_start();
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
       <link rel="icon" href="favicon.ico" type="image/x-icon">
+      
+      <!-- Using embedded CSS to style html page -->
       
       <style type="text/css">
           
@@ -45,8 +51,8 @@ session_start();
         </div> 
         
         <div class="apeiron-logo">
-        <img src="apeiron-logo-invert.png">
-      </div>
+         <img src="apeiron-logo-invert.png">
+        </div>
         
         <div class="navbar">
                

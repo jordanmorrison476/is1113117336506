@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+      
+        <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
+             throughout. This is to minimise repetition. -->
+             
         <title>Cloud Services | Products</title>
         
         <meta charset="UTF-8">
@@ -13,9 +17,29 @@
         
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+      
+      <!-- Using embedded CSS to style html page -->
       
       <style type="text/css">
+      
+          #marquee{
+                     position:fixed;
+                     left:0%;
+                     top:24%;
+                     width:100%;
+                     padding:5px;
+                     font-family:arial;
+                     font-weight:bold;
+                     background-color:rgb(50, 145, 144);
+                     background-color:rgba(50, 145, 144, 0.8);
+                     font-size:12pt;
+                     text-shadow: 1px 1px black;
+                     z-index:5;
+                     color:white;
+                     
+                
+            }
           
           #products{
                     position:fixed;
@@ -29,6 +53,7 @@
                     width:45%;
                    font-size:12pt;
                    font-family:helvetica, verdana;
+                   
                    
           }
           
@@ -52,6 +77,13 @@
       <div class="apeiron-logo">
         <img src="apeiron-logo-invert.png" alt="apeiron logo">
       </div>
+      
+       <!-- Adding a marquee used for call to actions/promos on my website -->
+                
+                <div id="marquee">
+       <!-- Setting the scrolling speed of the marquee to 8 -->
+                       <marquee scrollamount="8">Save up to 5% on all cloud service packages! Offer ends 20th of March. </marquee>
+                </div>
         
         <div class="navbar">
                

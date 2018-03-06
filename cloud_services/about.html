@@ -2,6 +2,9 @@
 <html lang="en-US">
     <head>
         
+            <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
+             throughout. This is to minimise repetition. -->
+             
             <title>Cloud Services | About</title>
             
             <meta charset="UTF-8">
@@ -13,6 +16,7 @@
               
             <link rel="icon" href="favicon.ico" type="image/x-icon">
             
+            <!-- Using embedded CSS to style html page -->
             
             <style type="text/css">
             
@@ -33,7 +37,7 @@
                 
             }
             
-               #panel_1{
+            #panel_1{
                        position:fixed;
                        height:81%;
                        width:101%;
@@ -46,7 +50,7 @@
                  
                }
                
-               #salesforce{
+            #salesforce{
                            position:fixed;
                            z-index:4;
                            top:45%;
@@ -64,13 +68,13 @@
                            
                }
                
-               #salesforce:hover{
+            #salesforce:hover{
                                 width:57%;
                                 
                  
                }
                
-               #salesforce-text{
+            #salesforce-text{
                             position:fixed;
                             top:48%;
                             right:5%;
@@ -89,25 +93,25 @@
                
                #salesforce:hover #salesforce-text{
                                                    color:rgb(44,145,223);
-                                                   transition-delay:1.75s;
+                                                   transition-delay:1.75s; /* Delaying the transition by 1.75 seconds so the text doesn't intefere with the salesforce logo */
                }
                
             
                
                #cloud9{
-                           position:fixed;
-                           z-index:4;
-                           top:45%;
-                           left:3.2%;
-                           width:11%;
-                            background-color:rgb(224, 255, 0);
-                            -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-                            transition: width 2s;
-                           padding:2%;
-                           border-radius:10px;
-                           padding-left:4.2%;
-                           padding-right:4.2%;
-                           overflow:hidden;
+                       position:fixed;
+                       z-index:4;
+                       top:45%;
+                       left:3.2%;
+                       width:11%;
+                        background-color:rgb(224, 255, 0);
+                        -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+                        transition: width 2s;
+                       padding:2%;
+                       border-radius:10px;
+                       padding-left:4.2%;
+                       padding-right:4.2%;
+                       overflow:hidden;
                            
                }
                
@@ -173,21 +177,21 @@
                
                
                #gmail{
-                           position:fixed;
-                           z-index:4;
-                           width:15%;
-                           bottom:3%;
-                           width:15%;
-                           right:4%;
-                            background-color:rgb(102,0,204);
-                            background-color:rgba(102,0,204,0.9);
-                           -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-                            transition: width 2s;
-                            border-radius:10px;
-                            padding:1.6%;
-                            padding-left:2.5%;
-                            padding-right:3%;
-                            overflow:hidden;
+                       position:fixed;
+                       z-index:4;
+                       width:15%;
+                       bottom:3%;
+                       width:15%;
+                       right:4%;
+                        background-color:rgb(102,0,204);
+                        background-color:rgba(102,0,204,0.9);
+                       -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+                        transition: width 2s;
+                        border-radius:10px;
+                        padding:1.6%;
+                        padding-left:2.5%;
+                        padding-right:3%;
+                        overflow:hidden;
                            
                            
                }
@@ -212,7 +216,7 @@
                
                #gmail:hover #gmail-text{
                                          color:	#4187EF;
-                                         transition-delay:1.75s;
+                                         transition-delay:1.75s; /* Delaying the transition by 1.75 seconds so the text doesn't intefere with the gmail logo*/
                                          
                }
               
@@ -239,10 +243,13 @@
               
          
               <div class="foreground">
+                  
+            <!-- Adding a marquee used for call to actions/promos on my website -->
                 
                 <div id="marquee">
-                       <marquee scrollamount="8">Save up to 10% on all cloud service packages by entering the promo code: <font style="font-size:13.5pt">apeiron_2018</font> </marquee>
-                   </div>
+            <!-- Setting the scrolling speed of the marquee to 8 -->
+                       <marquee scrollamount="8">Save up to 5% on all cloud service packages! Offer ends 20th of March. </marquee>
+                </div>
                   
                 
                  <div class="navbar">

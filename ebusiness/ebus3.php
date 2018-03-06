@@ -5,6 +5,9 @@ session_start();
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
+             throughout. This is to minimise repetition. -->
+             
         <title>Cloud Services | Products</title>
         
         <meta charset="UTF-8">
@@ -14,6 +17,8 @@ session_start();
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
        <link rel="icon" href="favicon.ico" type="image/x-icon">
+       
+       <!-- Using embedded CSS to style html page -->
       
         <style type="text/css">
             
@@ -48,8 +53,9 @@ session_start();
         </div> 
         
         <div class="apeiron-logo">
-        <img src="apeiron-logo-invert.png">
-      </div>
+         <img src="apeiron-logo-invert.png">
+        </div>
+      
         
         <div class="navbar">
                
