@@ -200,7 +200,7 @@
               <br/>
               <br/>
             
-            <!-- Using &nbsp; to insert white space. This is just another method used to position elements on a webpage. Although this method is more inefficient and generally more tedious than css styling. I use it here to illustrate the case. -->  
+            <!-- Using &nbsp; to insert white space. This is just another method used to position elements on a webpage. This method is more inefficient and generally more tedious than css styling. I use it here to illustrate the case. -->  
               
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" id="btnProceed" disabled style="background-color:#6a6c70;border-size:1px;border-radius:12px;border-color:#6a6c70;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Add to Shopping Cart</font></button>
             
