@@ -1,3 +1,5 @@
+<!-- Starting a php session to declare global variables used to transfer data in a non-contiguous manner -->
+
 <?php
 // Start the session
 session_start();
@@ -96,30 +98,35 @@ session_start();
                 
                     <form action="ebus3.php" method="POST">
                       
-                      <label for="user_name">Name:</label> <br><br>
+                      <label for="user_name">Name:</label> <br/><br/>
                       
-                      <input type="text" id="user_name" name="user_name" placeholder="Joe Bloggs" maxlength="30"> <br><br><br>
+                      <!-- This following input boxes have been given default text values as a prompt for the user. They have also been given set character ranges. -->
                       
-                      <label for="user_email">Email:</label> <br><br>
+                      <input type="text" id="user_name" name="user_name" placeholder="Joe Bloggs" maxlength="30"> <br/><br/><br/>
                       
-                      <input type="text" id="user_email" name="user_email" placeholder="joebloggs@ucc.ie" maxlength="40"> <br><br><br>
+                      <label for="user_email">Email:</label> <br/><br/>
+                      
+                      <input type="text" id="user_email" name="user_email" placeholder="joebloggs@ucc.ie" maxlength="40"> <br/><br/><br/>
         
-                      <label for="user_pin">PIN:</label> <br><br>
+                      <label for="user_pin">PIN:</label> <br/><br/>
                       
-                      <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4"> <br><br>
+                      <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4"> <br/><br/>
   
                      <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
                       
                     </form>
                     
                     <br/>
+                    
+                    <!-- When the user clicks the Validate button, it initiates the validateDetails() function which is located in the ebus2_validator.js file -->
                     <button onClick="validateDetails()">Validate</button>
                     
                 </div>   
                 
                 
+                
                 <?php
-                // Set session variables
+                // Setting session variables
                 $_SESSION["total"] = $_POST["total"];
                 ?>
                 

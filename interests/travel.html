@@ -99,7 +99,7 @@
         <div class="foreground">
               
               <div class="header">
-                  <h1>IS1113 Project - By Jordan Morrison (117336506)</h1>
+                  <h1>IS1113 Project - Jordan Morrison (117336506)</h1>
               </div>
                       
               <div class="navbar">
@@ -132,8 +132,8 @@
                         <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services
                         </button>
                         <div class="dropdown-content" style="min-width:16.25%;">
-                          <a href ="#">Homepage</a>
-                          <a href ="#">About</a>
+                          <a href ="../cloud_services/homepage_2.html">Homepage</a>
+                          <a href ="../cloud_services/about.html">About</a>
                           <a href ="https://is1113-project-jordanmorrison.c9users.io/ebusiness/ebus1.php">Products</a>
                         </div>
                       </div>
@@ -189,10 +189,10 @@
               
               // Creating another function that shows the chosen slide based on the counter variable.
               function showSlide(n) {
-                var i; //Declaring i as a local counter variable that is used to clear the display container 
+                var i; //Declaring i as a local counter variable that is used to clear the display container.
                 var x = document.getElementsByClassName("mySlides"); // Creating more efficient code.
                 if (n > x.length) {slideIndex = 1} // If the passed counter variable is greater than the highest slide (upperbound) i.e 4, then it resets the slideIndex variable to 1. 
-                if (n < 1) {slideIndex = x.length} // If the passed counter variable is less than 1 then it resets the counter variable to highest slide number (upperbound) i.e 4.
+                if (n < 1) {slideIndex = x.length} // If the passed counter variable is less than 1 then it resets the counter variable to the highest slide number (upperbound) i.e 4.
                 // Both of the above if statements are neccessary to insure the counter variable never exceeds 4 or is never less than 1.
                 
                 // Using a loop mechanism to reset the display container and prepare the container for the next image.

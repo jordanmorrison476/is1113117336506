@@ -18,6 +18,10 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       
         <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+        <!-- Importing a google font called Ubuntu -->
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
       
       <!-- Using embedded CSS to style html page -->
       
@@ -29,12 +33,12 @@
                      top:24%;
                      width:100%;
                      padding:5px;
-                     font-family:arial;
+                     font-family:'Ubuntu', sans-serif;
                      font-weight:bold;
                      background-color:rgb(50, 145, 144);
                      background-color:rgba(50, 145, 144, 0.8);
                      font-size:12pt;
-                     text-shadow: 1px 1px black;
+                     text-shadow: 0.5px 0.5px black;
                      z-index:5;
                      color:white;
                      
@@ -125,9 +129,10 @@
           
               <h3><font style="position:fixed;top:32%;left:41%;font-weight:bold;font-size:20pt;text-decoration:underline;font-family:helvetica,verdana;">Select a Product</font></h3><br><br>
           
-            
-            <form method="POST" action="ebus2.php">
-              
+          <!-- Creating a form using html in which the user can input data. The data is sent contiguously to the next page i.e ebus2.php. -->
+            <form method="POST" action="ebus2.php"> <!-- POST method is more secure and it is important to use when dealing with sensitive data such as personal details. POST also has no restrictions on data length whereas GET has a limit. -->
+           
+          <!-- Creating labels with corresponding radio buttons -->   
               <label for="salesforce">
                 <input type="radio" id="salesforce" name="product" onClick="disablebtnProceed()"/>
                 SalesForce @ $100
@@ -156,32 +161,33 @@
                 Gmail @ $400
               </label>
               
-              <br>
-              <br>
+              <br/>
+              <br/>
               
+            <!-- The following textboxes will display the calulated prices. The default value is set to $0.00 and it is set to ReadOnly meaning that the user cannot edit the data. -->
               <label for="subtotal">
                 Sub Total:
                 <input type="text" id="subtotal" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
               </label>
               
-              <br>
-              <br>
+              <br/>
+              <br/>
               
               <label for="discount">
                 Discount @ 5%: 
                 <input type="text" id="discount" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
               </label>
               
-              <br>
-              <br>
+              <br/>
+              <br/>
               
                <label for="vat">
                 VAT @ 10%: 
                 <input type="text" id="vat" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
               </label>
               
-              <br>
-              <br>
+              <br/>
+              <br/>
               
               
               
@@ -190,9 +196,11 @@
                 <input type="text" id="total" name="total" value="0.00" readonly style="width:100px;position:fixed;left:41%;text-align:right;"/>
               </label>
     
-              <br>
-              <br>
-              <br>
+              <br/>
+              <br/>
+              <br/>
+            
+            <!-- Using &nbsp; to insert white space. This is just another method used to position elements on a webpage. Although this method is more inefficient and generally more tedious than css styling. I use it here to illustrate the case. -->  
               
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" id="btnProceed" disabled style="background-color:#6a6c70;border-size:1px;border-radius:12px;border-color:#6a6c70;font-size:13pt;color:white;padding:1%;"><font style="font-family:verdana,helvetica;text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;font-weight:bold;">Add to Shopping Cart</font></button>
             

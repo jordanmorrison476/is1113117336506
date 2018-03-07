@@ -16,6 +16,10 @@
               
             <link rel="icon" href="favicon.ico" type="image/x-icon">
             
+            <!-- Importing a google font called Ubuntu -->
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+            
             <!-- Using embedded CSS to style html page -->
             
             <style type="text/css">
@@ -26,15 +30,14 @@
                      top:24%;
                      width:100%;
                      padding:5px;
-                     font-family:arial;
+                     font-family:'Ubuntu', sans-serif;
                      font-weight:bold;
                      background-color:rgb(50, 145, 144);
                      background-color:rgba(50, 145, 144, 0.8);
                      font-size:12pt;
-                     text-shadow: 1px 1px black;
+                     text-shadow: 0.5px 0.5px black;
                      z-index:5;
-                     
-                
+    
             }
             
             #panel_1{
@@ -254,11 +257,11 @@
                 
                  <div class="navbar">
                                
-                    <a href="../homepage/homepage.html">Home</a>
+                    <a href="../homepage/homepage.html" style="border-radius:4px;">Home</a>
                                   
                                       
                        <div class="dropdown">
-                            <button class="dropbtn" onclick="location.href='../cv/cv_page1.html'">Curriculum Vitae</button>
+                            <button class="dropbtn" onclick="location.href='../cv/cv_page1.html'" style="border-radius:4px;">Curriculum Vitae</button>
                             <div class="dropdown-content">
                               <a class="active" href ="#">Page 1</a>
                               <a href ="../cv/cv_page2.html">Page 2</a>
@@ -267,7 +270,7 @@
                        </div>
                       
                       <div class="dropdown">
-                        <button class="dropbtn" onclick="location.href='../interests/sports.html'">Interests</button>
+                        <button class="dropbtn" onclick="location.href='../interests/sports.html'" style="border-radius:4px;">Interests</button>
                         <div class="dropdown-content" style="min-width:12.4%;">
                           <a href ="../interests/sports.html">Sports</a>
                           <a href ="../interests/travel.html">Travel</a>
@@ -278,7 +281,7 @@
                       
                       <div class="dropdown">
                        <div class="active">
-                        <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'">Cloud Services</button>
+                        <button class="dropbtn" onclick="location.href='../cloud_services/homepage_2.html'" style="border-radius:4px;">Cloud Services</button>
                         <div class="dropdown-content" style="min-width:16.25%;">
                           <a href ="homepage_2.html">Homepage</a>
                           <a href ="#" style="background-color:rgba(12, 73, 173, 1);">About</a>

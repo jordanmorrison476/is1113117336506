@@ -46,14 +46,15 @@
 }
 
 
-.button:hover{color:#000!important;
-                background-color:#ccc!important}
+.button:hover{
+              color:#000!important;
+              background-color:#ccc!important}
 
 
 
 .black, .hover-black:hover{
-                                color:#fff!important;
-                                background-color:#000!important}
+                            color:#fff!important;
+                            background-color:#000!important}
                                 
                                 
 

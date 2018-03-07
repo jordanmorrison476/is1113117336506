@@ -1,9 +1,8 @@
 /* global $ */
 
+// This function validates the user's input to ensure the data is appropriate. 
 function validateDetails(){
-    
-   
-    
+
     var pin, name, email;
     
     pin = document.getElementById("user_pin").value;

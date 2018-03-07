@@ -5,6 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+      
         <!-- Please refer to my homepage/homepage.html file for the majority of this project's comments. However, any unique features to my project will be commented
              throughout. This is to minimise repetition. -->
              
@@ -97,13 +98,14 @@ session_start();
           
           <h4 style="text-align:center;font-size:20pt;border-bottom:1px white solid;padding-bottom:1%">Purchase Receipt:</h4>
           
-          <!-- Set session variables -->
+          <!-- Setting session variables -->
           
           <?php
           $_SESSION["user_name"] = $_POST["user_name"];
           $_SESSION["user_email"] = $_POST["user_email"];
           ?>
           
+          <!-- Displaying the saved data onto the webpage -->
           
           <?php
           echo "Name: " . $_SESSION["user_name"];

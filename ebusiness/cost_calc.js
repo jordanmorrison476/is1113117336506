@@ -1,8 +1,13 @@
 /* global $ */
 
+//This function calculates the subtotal based on the user's choice.
+
 function calcSub(){
-    
+  
+    // Declaring a subtotal variable  
     var argSubTotal;
+    
+    // Using conditional statements to determine what radio button the user selected.
     
     if(document.getElementById('salesforce').checked) {
       argSubTotal = 100;
@@ -23,12 +28,16 @@ function calcSub(){
        ('#btnProceed').prop('disabled', true);
     }
     
+    // Passing the subtotal variable as an argument to the calcDisVatTotal() function.
     calcDisVatTotal(argSubTotal);
 }
 
+// This function computes the discount, vat and total price using the subtotal parameter.
 function calcDisVatTotal(parmSubTotal){
     
     var subTotal, discountAmt, vatAmt, newSubTotal, totalPrice;
+    
+    //Using simple arithmetic to calculate the data.
     
     subTotal = parmSubTotal;
     
@@ -40,11 +49,12 @@ function calcDisVatTotal(parmSubTotal){
     
     totalPrice = ((subTotal + vatAmt) - discountAmt);
     
+    //Each variable is sent to the display() function as arguments.
     display(subTotal, discountAmt, vatAmt, totalPrice);
     
 }
 
-
+//This function then displays the computed data.
 function display(parm1, parm2, parm3, parm4){
   
   document.getElementById("subtotal").value = parm1;
@@ -58,6 +68,7 @@ function display(parm1, parm2, parm3, parm4){
 
 function enablebtnProceed(){
     $('#btnProceed').prop('disabled', false);
+    // Using javascript to change the background color of the the disabled add to shopping cart button to green. 
     document.getElementById("btnProceed").style.backgroundColor = "#1faf07";
     document.getElementById("btnProceed").style.borderColor = "#1faf07";
 }
